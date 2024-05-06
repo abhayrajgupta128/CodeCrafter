@@ -1,0 +1,569 @@
+{
+  "courseModel": [
+    {
+      "id": 1,
+      "name": "Introduction to React Native",
+      "instructor": "John Doe",
+      "description": "Learn the basics of React Native development and build your first mobile app.",
+      "enrollmentStatus": "Open",
+      "thumbnail": "https://dianapps.com/blog/wp-content/uploads/2024/01/Untitled-design-68.png",
+      "duration": "4 weeks",
+      "currentWeek": 2,
+      "totalWeeks": 4,
+      "schedule": "Mondays and Wednesdays, 6:00 PM - 8:00 PM",
+      "location": "Online",
+      "prerequisites": ["Basic JavaScript knowledge", "Familiarity with React"],
+      "syllabus": [
+        {
+          "week": 1,
+          "topic": "Introduction to React Native",
+          "content": "Overview of React Native, setting up your development environment."
+        },
+        {
+          "week": 2,
+          "topic": "Building Your First App",
+          "content": "Creating a simple mobile app using React Native components."
+        },
+        {
+          "week": 3,
+          "topic": "Navigating and Styling",
+          "content": "Adding navigation and styling to your React Native app."
+        },
+        {
+          "week": 4,
+          "topic": "API Integration",
+          "content": "Integrating APIs into your React Native app for data fetching."
+        }
+      ],
+      "students": [
+        {
+          "id": 101,
+          "name": "Alice Johnson",
+          "email": "alice@example.com"
+        },
+        {
+          "id": 102,
+          "name": "Bob Smith",
+          "email": "bob@example.com"
+        },
+        {
+          "id": 105,
+          "name": "David Lee",
+          "email": "david@example.com"
+        }
+      ],
+      "skills": ["React Native", "JavaScript", "Mobile App Development"],
+      "level": "Beginner",
+      "dueDate": "2024-06-01"
+    },
+    {
+      "id": 2,
+      "name": "Advanced JavaScript",
+      "instructor": "Jane Smith",
+      "description": "Take your JavaScript skills to the next level with advanced concepts and techniques.",
+      "enrollmentStatus": "Closed",
+      "thumbnail": "https://miro.medium.com/v2/resize:fit:1400/1*2We2TjSt6THe3SZQqic86g.png",
+      "duration": "3 weeks",
+      "currentWeek": 2,
+      "totalWeeks": 3,
+      "schedule": "Tuesdays and Thursdays, 7:00 PM - 9:00 PM",
+      "location": "Online",
+      "prerequisites": ["Intermediate JavaScript knowledge"],
+      "syllabus": [
+        {
+          "week": 1,
+          "topic": "ES6+ Features",
+          "content": "Learn about the latest features introduced in ECMAScript."
+        },
+        {
+          "week": 2,
+          "topic": "Functional Programming",
+          "content": "Explore functional programming concepts in JavaScript."
+        },
+        {
+          "week": 3,
+          "topic": "Asynchronous JavaScript",
+          "content": "Understand asynchronous programming with promises and async/await."
+        }
+      ],
+      "students": [
+        {
+          "id": 103,
+          "name": "Charlie Brown",
+          "email": "charlie@example.com"
+        },
+        {
+          "id": 104,
+          "name": "Olivia Martinez",
+          "email": "olivia@example.com"
+        },
+        {
+          "id": 101,
+          "name": "Alice Johnson",
+          "email": "alice@example.com"
+        }
+      ],
+      "skills": ["JavaScript", "ES6+", "Functional Programming"],
+      "level": "Intermediate",
+      "dueDate": "2024-09-01"
+      
+    },
+    {
+      "id": 3,
+      "name": "Python Programming",
+      "instructor": "Michael Johnson",
+      "description": "Master the fundamentals of Python programming language.",
+      "enrollmentStatus": "Closed",
+      "thumbnail": "https://wallpapercave.com/wp/wp4850088.jpg",
+      "duration": "4 weeks",
+      "currentWeek": 1,
+      "totalWeeks": 4,
+      "schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
+      "location": "Online",
+      "prerequisites": ["None"],
+      "syllabus": [
+        {
+          "week": 1,
+          "topic": "Introduction to Python",
+          "content": "Basic syntax, data types, and variables."
+        },
+        {
+          "week": 2,
+          "topic": "Control Flow",
+          "content": "Conditional statements and loops."
+        },
+        {
+          "week": 3,
+          "topic": "Functions and Modules",
+          "content": "Defining functions and organizing code into modules."
+        },
+        {
+          "week": 4,
+          "topic": "File Handling and Error Handling",
+          "content": "Working with files and handling exceptions."
+        }
+      ],
+      "students": [
+        {
+          "id": 105,
+          "name": "David Lee",
+          "email": "david@example.com"
+        },
+        {
+          "id": 102,
+          "name": "Bob Smith",
+          "email": "bob@example.com"
+        },
+        {
+          "id": 103,
+          "name": "Charlie Brown",
+          "email": "charlie@example.com"
+        },
+        {
+          "id": 101,
+          "name": "Alice Johnson",
+          "email": "alice@example.com"
+        },
+        {
+          "id": 106,
+          "name": "George Wilson",
+          "email": "george@example.com"
+        }
+      ],
+      "skills": ["Python", "Programming", "Software Development"],
+      "level": "Beginner",
+      "dueDate": "2024-07-01"
+    },
+    {
+      "id": 4,
+      "name": "Data Science Essentials",
+      "instructor": "Sophia Rodriguez",
+      "description": "Learn the essential concepts and techniques of data science.",
+      "enrollmentStatus": "In Progress",
+      "thumbnail": "https://i.pinimg.com/originals/54/dd/2a/54dd2a6c17f894e233848e18eaa242d9.jpg",
+      "duration": "4 weeks",
+      "currentWeek": 3,
+      "totalWeeks": 4,
+      "schedule": "Mondays and Wednesdays, 7:00 PM - 9:00 PM",
+      "location": "Online",
+      "prerequisites": ["Basic Python knowledge"],
+      "syllabus": [
+        {
+          "week": 1,
+          "topic": "Introduction to Data Science",
+          "content": "Overview of data science and its applications."
+        },
+        {
+          "week": 2,
+          "topic": "Data Wrangling",
+          "content": "Cleaning and preparing data for analysis."
+        },
+        {
+          "week": 3,
+          "topic": "Exploratory Data Analysis",
+          "content": "Visualizing and exploring data to gain insights."
+        },
+        {
+          "week": 4,
+          "topic": "Machine Learning Basics",
+          "content": "Introduction to machine learning algorithms and techniques."
+        }
+      ],
+      "students": [
+        {
+          "id": 107,
+          "name": "Fiona Clark",
+          "email": "fiona@example.com"
+        },
+        {
+          "id": 108,
+          "name": "Liam Wilson",
+          "email": "liam@example.com"
+        },
+        {
+          "id": 109,
+          "name": "Ava Rodriguez",
+          "email": "ava@example.com"
+        },
+        {
+          "id": 105,
+          "name": "David Lee",
+          "email": "david@example.com"
+        },
+        {
+          "id": 102,
+          "name": "Bob Smith",
+          "email": "bob@example.com"
+        }
+      ],
+      "skills": ["Data Science", "Machine Learning", "Statistics"],
+      "level": "Intermediate",
+      "dueDate": "2024-08-01"
+    },
+    {
+      "id": 5,
+      "name": "Frontend Web Development",
+      "instructor": "Andrew Thompson",
+      "description": "Learn to build interactive and responsive web applications using modern frontend technologies.",
+      "enrollmentStatus": "Open",
+      "thumbnail": "https://www.syncfusion.com/blogs/wp-content/uploads/2020/07/Top-6-Front-End-Web-Development-Tools-to-Increase-Your-Productivity-in-2020-1.jpg",
+      "duration": "3 weeks",
+      "currentWeek": 2,
+      "totalWeeks": 3,
+      "schedule": "Tuesdays and Thursdays, 5:00 PM - 7:00 PM",
+      "location": "Online",
+      "prerequisites": ["HTML", "CSS", "Basic JavaScript knowledge"],
+      "syllabus": [
+        {
+          "week": 1,
+          "topic": "HTML and CSS",
+          "content": "Review of HTML and CSS basics, introduction to CSS frameworks."
+        },
+        {
+          "week": 2,
+          "topic": "JavaScript and DOM Manipulation",
+          "content": "Introduction to JavaScript and DOM manipulation techniques."
+        },
+        {
+          "week": 3,
+          "topic": "React.js Basics",
+          "content": "Introduction to React.js library and building simple React components."
+        }
+      ],
+      "students": [
+        {
+          "id": 106,
+          "name": "George Wilson",
+          "email": "george@example.com"
+        },
+        {
+          "id": 109,
+          "name": "Ava Rodriguez",
+          "email": "ava@example.com"
+        }
+      ],
+      "skills": ["HTML", "CSS", "JavaScript", "React.js"],
+      "level": "Beginner",
+      "dueDate": "2024-09-01"
+    },
+    {
+      "id": 6,
+      "name": "Java Programming",
+      "instructor": "Sarah Adams",
+      "description": "Learn the fundamentals of Java programming language.",
+      "enrollmentStatus": "Open",
+      "thumbnail": "https://www.wallpaperflare.com/static/114/1004/946/java-development-web-development-logo-wallpaper.jpg",
+      "duration": "4 weeks",
+      "currentWeek": 3,
+      "totalWeeks": 4,
+      "schedule": "Mondays and Wednesdays, 6:00 PM - 8:00 PM",
+      "location": "Online",
+      "prerequisites": ["None"],
+      "syllabus": [
+        {
+          "week": 1,
+          "topic": "Introduction to Java",
+          "content": "Basic syntax, data types, and variables."
+        },
+        {
+          "week": 2,
+          "topic": "Control Flow",
+          "content": "Conditional statements and loops."
+        },
+        {
+          "week": 3,
+          "topic": "Object-Oriented Programming",
+          "content": "Classes, objects, inheritance, and polymorphism."
+        },
+        {
+          "week": 4,
+          "topic": "Exception Handling and File I/O",
+          "content": "Handling exceptions and working with files."
+        }
+      ],
+      "students": [
+        {
+          "id": 111,
+          "name": "Hannah Garcia",
+          "email": "hannah@example.com"
+        },
+        {
+          "id": 112,
+          "name": "Isabella Lopez",
+          "email": "isabella@example.com"
+        },
+        {
+          "id": 108,
+          "name": "Liam Wilson",
+          "email": "liam@example.com"
+        },
+        {
+          "id": 109,
+          "name": "Ava Rodriguez",
+          "email": "ava@example.com"
+        },
+        {
+          "id": 105,
+          "name": "David Lee",
+          "email": "david@example.com"
+        },
+        {
+          "id": 104,
+          "name": "Olivia Martinez",
+          "email": "olivia@example.com"
+        }
+      ],
+      "skills": ["Java", "Programming", "Software Development"],
+      "level": "Beginner",
+      "dueDate": "2024-07-01"
+    },
+    {
+      "id": 7,
+      "name": "Machine Learning Basics",
+      "instructor": "David Brown",
+      "description": "Introduction to machine learning algorithms and techniques.",
+      "enrollmentStatus": "In Progress",
+      "thumbnail": "https://www.nice.com/-/media/niceincontact/page-content/blog/2022/12/how-machine-learning-is-transforming-intraday-management/how-machine-learning-is-transforming-intraday-management-banner.ashx?rev=7b6499e639024187aece027e645ecf87",
+      "duration": "3 weeks",
+      "currentWeek": 2,
+      "totalWeeks": 3,
+      "schedule": "Tuesdays and Thursdays, 7:00 PM - 9:00 PM",
+      "location": "Online",
+      "prerequisites": ["Basic Python knowledge"],
+      "syllabus": [
+        {
+          "week": 1,
+          "topic": "Introduction to Machine Learning",
+          "content": "Overview of machine learning concepts and applications."
+        },
+        {
+          "week": 2,
+          "topic": "Supervised Learning",
+          "content": "Regression and classification algorithms."
+        },
+        {
+          "week": 3,
+          "topic": "Unsupervised Learning",
+          "content": "Clustering and dimensionality reduction techniques."
+        }
+      ],
+      "students": [
+        {
+          "id": 113,
+          "name": "Alice Johnson",
+          "email": "alice@example.com"
+        },
+        {
+          "id": 111,
+          "name": "Hannah Garcia",
+          "email": "hannah@example.com"
+        },
+        {
+          "id": 112,
+          "name": "Isabella Lopez",
+          "email": "isabella@example.com"
+        },
+        {
+          "id": 108,
+          "name": "Liam Wilson",
+          "email": "liam@example.com"
+        },
+        {
+          "id": 104,
+          "name": "Olivia Martinez",
+          "email": "olivia@example.com"
+        }
+      ],
+      "skills": ["Machine Learning", "Data Science", "Python"],
+      "level": "Beginner",
+      "dueDate": "2024-06-01"
+    },
+    {
+      "id": 8,
+      "name": "React.js Fundamentals",
+      "instructor": "Michael Smith",
+      "description": "Learn the fundamentals of React.js library.",
+      "enrollmentStatus": "Closed",
+      "thumbnail": "https://shethink.in/wp-content/uploads/2021/07/react.js-img.png",
+      "duration": "4 weeks",
+      "currentWeek": 3,
+      "totalWeeks": 4,
+      "schedule": "Mondays and Wednesdays, 6:00 PM - 8:00 PM",
+      "location": "Online",
+      "prerequisites": ["Basic JavaScript knowledge"],
+      "syllabus": [
+        {
+          "week": 1,
+          "topic": "Introduction to React.js",
+          "content": "Overview of React.js library and its features."
+        },
+        {
+          "week": 2,
+          "topic": "Components and Props",
+          "content": "Creating and using components, passing props."
+        },
+        {
+          "week": 3,
+          "topic": "State and Lifecycle",
+          "content": "Managing component state and lifecycle methods."
+        },
+        {
+          "week": 4,
+          "topic": "Handling Events and Forms",
+          "content": "Handling user events and working with forms."
+        }
+      ],
+      "students": [
+        {
+          "id": 114,
+          "name": "Bob Smith",
+          "email": "bob@example.com"
+        },
+        {
+          "id": 115,
+          "name": "James Taylor",
+          "email": "james@example.com"
+        },
+        {
+          "id": 116,
+          "name": "William Lee",
+          "email": "william@example.com"
+        },
+        {
+          "id": 117,
+          "name": "Sophia Clark",
+          "email": "sophia@example.com"
+        },
+        {
+          "id": 113,
+          "name": "Alice Johnson",
+          "email": "alice@example.com"
+        },
+        {
+          "id": 111,
+          "name": "Hannah Garcia",
+          "email": "hannah@example.com"
+        },
+        {
+          "id": 112,
+          "name": "Isabella Lopez",
+          "email": "isabella@example.com"
+        }
+      ],
+      "skills": ["React.js", "JavaScript", "Frontend Development"],
+      "level": "Intermediate",
+      "dueDate": "2024-10-01"
+    },
+    {
+      "id": 9,
+      "name": "Cybersecurity Fundamentals",
+      "instructor": "Sophie Turner",
+      "description": "Gain essential knowledge and skills in cybersecurity.",
+      "enrollmentStatus": "Closed",
+      "thumbnail": "https://media.istockphoto.com/id/1331943958/photo/digital-cloud-security-background-concept.jpg?b=1&s=612x612&w=0&k=20&c=b2Vm-_SAQ2YHgaw7lwIuTv7-mXq0YXWYJok2zazSFgc=",
+      "duration": "3 weeks",
+      "currentWeek": 1,
+      "totalWeeks": 3,
+      "schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
+      "location": "Online",
+      "prerequisites": ["Basic computer literacy"],
+      "syllabus": [
+        {
+          "week": 1,
+          "topic": "Introduction to Cybersecurity",
+          "content": "Overview of cybersecurity concepts and threats."
+        },
+        {
+          "week": 2,
+          "topic": "Network Security",
+          "content": "Understanding network security principles and protocols."
+        },
+        {
+          "week": 3,
+          "topic": "Cybersecurity Tools",
+          "content": "Exploring common cybersecurity tools and techniques."
+        }
+      ],
+      "students": [
+        {
+          "id": 118,
+          "name": "Charlie Brown",
+          "email": "charlie@example.com"
+        },
+        {
+          "id": 119,
+          "name": "Isabella Lopez",
+          "email": "isabella@example.com"
+        },
+        {
+          "id": 120,
+          "name": "William Lee",
+          "email": "william@example.com"
+        },
+        {
+          "id": 115,
+          "name": "James Taylor",
+          "email": "james@example.com"
+        },
+        {
+          "id": 116,
+          "name": "William Lee",
+          "email": "william@example.com"
+        },
+        {
+          "id": 117,
+          "name": "Sophia Clark",
+          "email": "sophia@example.com"
+        },
+        {
+          "id": 113,
+          "name": "Alice Johnson",
+          "email": "alice@example.com"
+        }
+      ],
+      "skills": ["Cybersecurity", "Network Security", "Information Security"],
+      "level": "Beginner",
+      "dueDate": "2024-05-01"
+    }
+  ]
+}
