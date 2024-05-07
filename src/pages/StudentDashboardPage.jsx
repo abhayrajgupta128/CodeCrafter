@@ -15,9 +15,12 @@ const StudentDashboardPage = () => {
   useEffect(() => {
     const fetchEnrolledCourses = async () => {
       try {
-        const res = await axios.get("http://localhost:3031/courseModel");
+        const res = await axios.get(
+          "https://abhayrajgupta128.github.io/jsonapi/db.json"
+        );
         const courses = res.data;
-        const userCourses = courses.filter((course) =>
+        const courseModel = courses.courseModel ?? [];
+        const userCourses = courseModel.filter((course) =>
           course.students.some((student) => student.id === 105)
         );
         dispatch(setEnrolledCourses(userCourses));
@@ -25,7 +28,7 @@ const StudentDashboardPage = () => {
         // We can create user model by we don't have to put user's ID manually but you don't give that in the tasks.
         // Assuming the current user's id is 105
         // You can check by entering id from 101 to 109
-        
+
         const currentUserData = userCourses[0]?.students.find(
           (student) => student.id === 105
         );
@@ -83,7 +86,7 @@ const StudentDashboardPage = () => {
                     <input
                       className="course h-5 w-5 mt-1 bg-black"
                       type="checkbox"
-                      checked={!!course.completed} 
+                      checked={!!course.completed}
                       onChange={() => handleMarkAsCompleted(course.id)}
                     />
                   </label>

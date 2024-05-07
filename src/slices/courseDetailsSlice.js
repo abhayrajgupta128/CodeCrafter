@@ -22,7 +22,8 @@ const courseDetailSlice = createSlice({
   },
 });
 
-export const { setCourse, setLoading, setIsExpanded } = courseDetailSlice.actions;
+export const { setCourse, setLoading, setIsExpanded } =
+  courseDetailSlice.actions;
 
 export const selectCourse = (state) => state.courseDetail.course;
 

@@ -16,7 +16,7 @@ const CourseListingPage = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3031/courseModel")
+      .get("https://abhayrajgupta128.github.io/jsonapi/db.json")
       .then((res) => dispatch(setCourses(res.data)))
       .catch((err) => console.log(err));
   }, [dispatch]);
@@ -25,10 +25,18 @@ const CourseListingPage = () => {
     dispatch(setSearch(ev.target.value));
   };
 
-  const filteredCourses = courses.filter((course) => {
+  const courseModel = courses.courseModel ?? [];
+  const filteredCourses = courseModel.filter((course) => {
+    if (!course || typeof course !== "object") {
+      return false;
+    }
+
+    const name = course.name ?? "";
+    const instructor = course.instructor ?? "";
+
     return (
-      course.name.toLowerCase().includes(search.toLowerCase()) ||
-      course.instructor.toLowerCase().includes(search.toLowerCase())
+      name.toLowerCase().includes(search.toLowerCase()) ||
+      instructor.toLowerCase().includes(search.toLowerCase())
     );
   });
 
@@ -52,7 +60,7 @@ const CourseListingPage = () => {
           </svg>
           <h1 className="hidden sm:block text-4xl font-bold">All courses</h1>
         </div>
-        <Search search={search} handleSearch={handleSearch}/>
+        <Search search={search} handleSearch={handleSearch} />
       </div>
 
       <div className="grid gap-14 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10">

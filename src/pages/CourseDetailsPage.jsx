@@ -2,7 +2,12 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import axios from "axios";
 import { useParams } from "react-router-dom";
-import { selectCourse, setCourse, setLoading, setIsExpanded } from "../slices/courseDetailsSlice";
+import {
+  selectCourse,
+  setCourse,
+  setLoading,
+  setIsExpanded,
+} from "../slices/courseDetailsSlice";
 
 const CourseDetailPage = () => {
   const { id } = useParams();
@@ -15,8 +20,19 @@ const CourseDetailPage = () => {
     const fetchCourse = async () => {
       try {
         dispatch(setLoading(true));
-        const res = await axios.get(`http://localhost:3031/courseModel/${id}`);
-        dispatch(setCourse(res.data));
+        const res = await axios.get(
+          `https://abhayrajgupta128.github.io/jsonapi/db.json`
+        );
+        const courseModel = res.data.courseModel ?? [];
+
+        const selectedCourse = courseModel.find(
+          (course) => String(course.id) === id
+        );
+        if (selectedCourse) {
+          dispatch(setCourse(selectedCourse));
+        } else {
+          console.error("Error fetching course: Course not found");
+        }
       } catch (err) {
         console.error("Error fetching course:", err);
       } finally {
@@ -78,7 +94,8 @@ const CourseDetailPage = () => {
             <strong>Location:</strong> {course.location}
           </p>
           <p>
-            <strong>Pre-requisites:</strong> {course.prerequisites.join(", ")}
+            <strong>Pre-requisites:</strong> .
+            {/* {course.prerequisites.join(", ")} */}
           </p>
         </div>
         <div>

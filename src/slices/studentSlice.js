@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   enrolledCourses: [],
@@ -6,7 +6,7 @@ const initialState = {
 };
 
 const studentSlice = createSlice({
-  name: 'student',
+  name: "student",
   initialState,
   reducers: {
     setEnrolledCourses(state, action) {
@@ -27,6 +27,7 @@ const studentSlice = createSlice({
   },
 });
 
-export const { setEnrolledCourses, setCurrentUser, markCourseAsCompleted } = studentSlice.actions;
+export const { setEnrolledCourses, setCurrentUser, markCourseAsCompleted } =
+  studentSlice.actions;
 
 export default studentSlice.reducer;
