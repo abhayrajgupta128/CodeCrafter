@@ -18,7 +18,7 @@ const Search = ({ search, handleSearch }) => {
         />
       </svg>
       <input
-        className="flex gap-2 border border-gray-300 rounded-xl py-2 px-4 shadow-sm shadow-gray-200 w-38 lg:w-64 bg-transparent"
+        className="flex gap-2 border border-gray-300 rounded-xl py-2 px-4 shadow-sm shadow-gray-200 w-40 md:w-64 bg-transparent"
         type="text"
         value={search}
         onChange={handleSearch}

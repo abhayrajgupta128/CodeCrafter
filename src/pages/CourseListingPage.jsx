@@ -33,7 +33,7 @@ const CourseListingPage = () => {
   });
 
   return (
-    <div className="text-white m-4">
+    <div className="text-white mt-4">
       <div className="flex justify-between ">
         <div className="flex gap-3">
           <svg
@@ -52,7 +52,7 @@ const CourseListingPage = () => {
           </svg>
           <h1 className="hidden sm:block text-4xl font-bold">All courses</h1>
         </div>
-        <Search search={search} handleSearch={handleSearch} />
+        <Search search={search} handleSearch={handleSearch}/>
       </div>
 
       <div className="grid gap-14 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10">

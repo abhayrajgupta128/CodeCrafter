@@ -47,7 +47,7 @@ const StudentDashboardPage = () => {
   };
 
   return (
-    <div className="m-4 text-white ">
+    <div className="mt-4 text-white ">
       <div className="box p-8 rounded-3xl ">
         <div className="flex gap-2">
           <h1 className="text-3xl">
